@@ -1,4 +1,4 @@
-#Code Base of Reflection On Prediction of Yelp Review Star Rating 
+# Code Base of Reflection On Prediction of Yelp Review Star Rating 
 This is a project by Hemeng Maggie Li, Chudan Ivy Liu, Jiawen Jasmine Zhu. 
 
 (Since we can't select two partners on submission site, so two of us submit
@@ -6,7 +6,7 @@ one copy of the project, and the other one also submit one copy by herself.
 Please grade this content for all three of us)
 
 
-#Install Required Dependencies
+# Install Required Dependencies
   1. Install package `TextBolb` 
      * Run with command 
        `pip install -U textblob`
@@ -18,7 +18,7 @@ Please grade this content for all three of us)
        `pip install geoplotlib`
 
 
-#Overview of Design Decisions
+# Overview of Design Decisions
 
 1. Machine Learning Part:
    * `main.py`:  
