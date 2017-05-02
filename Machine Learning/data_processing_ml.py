@@ -84,3 +84,34 @@ def get_processed_data(LoR):
     Y_test = Y[size_train:]
 
     return X_train, X_test, Y_train, Y_test
+
+
+def process_label(Y):
+    """ This function takes in one argument:
+            1) Y, the label of the data
+
+        This function modifies the labels from five catagories to three catagories.
+        The original labels are star ratings from 1 to 5. Now we classify the
+        labes into three catagories:
+            1) non-favorable(-1), if 1 or 2 star
+            2) neutral, if 3 star
+            3) favorable, if 4 or 5 star
+
+        This function then returns the modified label of the data.
+    """
+    # create a new list to hold the label
+    new_Y = []
+
+    # loop through all labels
+    for label in Y:
+        # if 1 or 2, non-favorable
+        if label == 1 or label == 2:
+            new_Y.append(-1)
+        # if 3, neutral
+        elif label == 3:
+            new_Y.append(0)
+        # otherwise, it's favorable
+        else:
+            new_Y.append(1)
+
+    return new_Y

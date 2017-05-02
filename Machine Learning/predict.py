@@ -97,5 +97,5 @@ def predict_review(review, knn, dtree):
     pred_dtree = dtree.predict(test)
 
     print("\nGiven the review test:\n\n", review)
-    print("\nThe star rating for this review predicted using our trained KNN Classifier is:", pred_knn[0])
-    print("\nThe star rating for this review predicted using our trained Decision Tree Classifier is:", pred_dtree[0])
+    print("\nThe star rating/catagory for this review predicted using our trained KNN Classifier is:", pred_knn[0])
+    print("\nThe star rating/catagory for this review predicted using our trained Decision Tree Classifier is:", pred_dtree[0])
